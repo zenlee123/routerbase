@@ -1,0 +1,43 @@
+{
+  "name": "routerbase-typescript-starter",
+  "version": "0.1.0",
+  "description": "A TypeScript starter and helper toolkit for building AI apps with RouterBase, one OpenAI-compatible API for 200+ models.",
+  "author": "RouterBase community",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://routerbase.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenlee123/routerbase.git"
+  },
+  "keywords": [
+    "routerbase",
+    "ai-router",
+    "llm-router",
+    "openai-compatible",
+    "typescript",
+    "ai-sdk",
+    "gpt",
+    "claude",
+    "gemini",
+    "model-routing",
+    "fallback"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
